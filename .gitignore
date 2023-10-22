@@ -9,3 +9,4 @@
 public/uploadfile/*
 web/*
 .github
+composer.lock
