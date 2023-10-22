@@ -1,0 +1,11 @@
+/.idea
+/.vscode
+/vendor
+/package
+/runtime
+*.log
+.env
+.gitee
+public/uploadfile/*
+web/*
+.github

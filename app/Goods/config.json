@@ -1,0 +1,9 @@
+{
+    "name": "Goods",
+    "label": "产品",
+    "description": "产品模块",
+    "installed": true,
+    "enabled": true,
+    "version": "1.0.0",
+    "order": 1
+}
