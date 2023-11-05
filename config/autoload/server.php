@@ -21,7 +21,7 @@ return [
             'name' => 'http',
             'type' => Server::SERVER_HTTP,
             'host' => '0.0.0.0',
-            'port' => 9500,
+            'port' => (int) \Hyperf\Support\env('SERVER_PORT', 9501),
             'sock_type' => SWOOLE_SOCK_TCP,
             'callbacks' => [
                 Event::ON_REQUEST => [MineServer::class, 'onRequest'],
@@ -31,7 +31,7 @@ return [
             'name' => 'message',
             'type' => Server::SERVER_WEBSOCKET,
             'host' => '0.0.0.0',
-            'port' => 9400,
+            'port' => (int) \Hyperf\Support\env('SERVER_WS_PORT', 9502),
             'sock_type' => SWOOLE_SOCK_TCP,
             'callbacks' => [
                 Event::ON_HAND_SHAKE => [Hyperf\WebSocketServer\Server::class, 'onHandShake'],
